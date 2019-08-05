@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AAIR Lab</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.https://fonts.googleapis.com/css?family=Cairo|Abel|Rajdhani|Dosismin.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/aair_logo_square.png" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/academicons.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Cairo|Abel|Rajdhani|Dosis' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#people">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#publications">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Courses</a>
+            <div class="dropdown-menu">
+              <a href="../571_f19.html" class="dropdown-item">CSE 571: Fall 2019</a>
+              <a href="../571_s19.html" class="dropdown-item">CSE 571: Spring 2019</a>
+              <a href="../471_f18.html" class="dropdown-item">CSE 471: Fall 2018</a>
+              <a href="../591_s18.html" class="dropdown-item">CSE 591: Spring 2018</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact">Contact Us</a>
+          </li>
+        </ul>            
+      </div>
+    </nav>
+    <!--Background Cover Photo-->                
+    <div class="img-responsive">
+    </div>    <!-- This class is for the cover pic at the top. Check the CSS file for it's implementation>-->
+
+    <div class="container-571">
+      <div class="card-main mx-2" >
+        <div class="card-body mx-0">
+          <h1 id="571"> CS 571: Artificial Intelligence</h1>
+          <h3>Fall 2019: Homework 0</h3>
+          <h4>Due on September 03, 2019 - 11:59 pm</h4>
+          <br />
+          Welcome to CSE 571: Artificial Intelligence. Throughout this course we will use <i>Robot Operating System(ROS)</i> for our programming projects.
+          <br /><br />
+          ROS is an open-source, meta-operating system for the robots. It provides the services one would expect from an operating system including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. It also provides tools and libraries for obtaining, building, writing, and running code across multiple computers.
+          <br /><br />
+          For this homework and course you will need to install and configure ROS on your computer. We will be using <b>ROS Kinetic</b> throughout the course which requires <b>Ubuntu 16.04 LTS</b>. You can also use VM to install Ubuntu on your computer.
+          <br /><br />
+          
+          <h3>Requirements</h3>
+          <ol>
+            <li>
+              <h4>Ubuntu 16.04</h4>
+              We have created assignments on Ubuntu 16.04, hence for compatibility issues we need you to work on the same version of Ubuntu. You can use either of the two following options:
+              <br /><br />
+              <ol>
+                <li><b><i>Install Ubuntu on PC</i></b>: You can download Ubutnu from here: <a href="http://releases.ubuntu.com/16.04/" target="_blank">http://releases.ubuntu.com/16.04/</a>. 
+                  <br />Learn how to install Ubuntu at <a href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop-1604" target="_blank">https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop-1604</a>. <br />If you are looking to install Ubuntu on UEFI systems, you can get help at <a href="https://help.ubuntu.com/community/UEFI" target="_blank">https://help.ubuntu.com/community/UEFI</a>.
+                </li>
+                <br />
+                <li>
+                  <b><i>Use virtual machine</i></b>: You can use applications like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> to create a virtual machine. Some relevant tutorials are:
+                  <ol type="i">
+                    <li><a href="https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html" target="_blank">How to create a new VM?</a></li>
+                    <li><a href="https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html" target="_blank">How to import an existing VM?</a></li>
+                  </ol>
+                  We recommend installing Ubuntu on your system (this can be done alongside Windows) as running virtual machine is generally slower than using Ubuntu installed on your system.
+                </li>
+              </ol>
+              <br />
+            </li>
+            <li>
+              <h4> ROS Kinetic</h4>
+              You can use the instructions to install Ubuntu given at <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu" target="_blank">http://wiki.ros.org/kinetic/Installation/Ubuntu</a>.
+              <br />
+              If you are new to ROS and Ubuntu, you can do a full install of ROS. to do this, use the following command at step 1.4 in the <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu" target="_blank">installation instructions</a>:
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  sudo apt-get install ros-kinetic-desktop-full
+                </tt>
+              </div>
+              <br />
+              ROS Tutorials are available at <a href="http://wiki.ros.org/ROS/Tutorials">http://wiki.ros.org/ROS/Tutorials</a>. This includes tutorials for installing and configuring ROS. For this assignment you will need to install and configure ROS and go over beginner’s tutorials for python to make yourself familier with ROS. After this homerwork, students should be able to write simple service-client functionalities and simple subscriber-publisher on their own.
+            </li>
+          </ol>
+        
+          <br />
+          <h3>Setting Up Turtlebot3</h3>
+          Once you install ROS, you will need to set up <b>Turtlebot3</b> with <b>Gazebo</b> simulator. If you have installed ROS successfully, Gazebo should already be installed. To set up the Turtlebot3, you will need to first initialize the catkin workspace.
+          <br /><br />
+          You can follow the instructions given at <a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>. To set up Turtlebot3 in Gazebo, Follow the following steps:
+          <br /><br />
+          <ol>
+            <li>
+              You will need to first clone the <tt>turtlebot3_msgs</tt> module for Turtlebot3. You can find this on <a href="https://github.com/ROBOTIS-GIT/turtlebot3_msgs">https://github.com/ROBOTIS-GIT/turtlebot3_msgs</a>. You will need to clone this repository and place at <tt>catkin_ws/src</tt>. The commands to do this are:
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  cd ~/catkin_ws/src <br />
+                  git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+                </tt>
+              </div>
+            </li>
+            <br />
+            <li>
+              Now you will need to clone mandatory modules to use Turtlebot3 with ROS. You can find this on <a href="https://github.com/ROBOTIS-GIT/turtlebot3">https://github.com/ROBOTIS-GIT/turtlebot3</a>. You will need to clone this repsoitory to same place at <tt>catkin_ws/src</tt>. The commands to do this are:
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  cd ~/catkin_ws/src <br />
+                  git clone https://github.com/ROBOTIS-GIT/turtlebot3.git  
+                </tt>
+              </div>
+            </li>
+            <br />
+            <li>
+              The last step is to clone the Turtlebot3 simulators which you can obtain at <a href="https://github.com/ROBOTIS-GIT/turtlebot3_simulations">https://github.com/ROBOTIS-GIT/turtlebot3_simulations</a>. The commands to do this are:
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  cd ~/catkin_ws/src <br />
+                  git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git  
+                </tt>
+              </div>
+            </li>
+          </ol>
+          Once you clone everything move to your catkin_ws and execute command <tt>catkin_make</tt> to build all the modules.
+          <br /><br />
+          <div class="boxed">
+            <tt>
+              cd ~/catkin_ws <br />
+              catkin_make
+            </tt>
+          </div>
+          <br />
+          Now you are ready to use Turtlebot3 with Gazebo. You will find tutorials on Turtlebot3 simulator with Gazebo at <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/">http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/</a>. 
+          <br />
+          A more comprehensive resource to learn about Turtlebot is <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/">http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/</a>
+          <br /><br />
+      
+          <h3>Using Turtlebot3</h3>
+          To load the environment, you need to do the following:
+          <br /><br />
+          <ol>
+            <li> 
+              Source setup.bash file.
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  source ~/catkin_ws/devel/setup.bash
+                </tt>
+              </div>
+              <br />
+              This has to be done every time you open a new terminal as setup.bash holds important environment variables. This also has use in overlaying multiple workspaces, which you may ignore as of now.
+            </li>
+            <br />
+            <li>
+              Set TurtleBot model. You have to set one of the three TurtleBot3 models: <tt>burger</tt>, <tt>waffle</tt>, or <tt>waffle_pi</tt>. Lets set it to <tt>burger</tt> for this demo.
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  export TURTLEBOT3_MODEL=burger
+                </tt>
+              </div>
+              <br />
+              This step also needs to be executed every time you start a new terminal.
+            </li>
+            <br />
+            <li> 
+              Launching a turtlebot environment.
+              <br /><br />
+              <div class="boxed">
+                <tt>
+                  roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+                </tt>
+              </div>
+              <br />
+              You should be able to see the following screen in Gazebo after executing this command:<br /><br />
+              <div class="justify-content-center align-items-center" style="margin-bottom:25px; ">
+                <div class="justify-content-center align-items-center" style="margin:0 center;">
+                  <img src="../../images/571/gazebo_tb3_1.png" alt="Turtlebot3 Gazebo Init" class="card-img-bottom" style="max-width: 1000px">
+                </div>
+              </div>
+            </li>
+            <li> 
+              Teleoperation on Gazebo can be performed using the following command. Run this in a new terminal, and don’t forget to perform steps 1 and 2 in this new terminal.
+              <br /><br /> 
+              <div class="boxed">
+                <tt>
+                  roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+                </tt>
+              </div>
+              <br />
+              You should now see a prompt where you can use the keys <tt>w</tt>, <tt>a</tt>, <tt>s</tt>, <tt>d</tt>, <tt>x</tt> to control the turtlebot. Here is what your terminal will look like after pressing <tt>w</tt>, <tt>w</tt>, <tt>w</tt> keys:<br /><br />
+              <div class="justify-content-center align-items-center" style="margin-bottom:25px; ">
+                <div class="justify-content-center align-items-center" style="margin:0 center;">
+                  <img src="../../images/571/terminal_tb3_1.png" alt="Turtlebot3 Teleoperation Demo" class="card-img-bottom" style="max-width: 1000px">
+                </div>
+              </div>
+              <br />
+              And you’ll notice that turtlebot has started moving in the forward direction (along the axis represented by red line in the environment).<br /><br />
+              <div class="justify-content-center align-items-center" style="margin-bottom:25px; ">
+                <div class="justify-content-center align-items-center" style="margin:0 center;">
+                  <img src="../../images/571/gazebo_tb3_2.png" alt="Turtlebot3 Teleoperation Gazebo Demo" class="card-img-bottom" style="max-width: 1000px">
+                </div>
+              </div>
+            </li>
+          </ol>
+          <br />
+
+          <h3>Tip</h3>
+          If you do not want to execute steps 1 and 2 every time, you can add those commands in your <tt>bashrc</tt> file.
+          <br /><br />
+          <div class="boxed">
+            <tt>
+              gedit ~/.bashrc
+            </tt>
+          </div>
+          <br />
+          Add the two commands at the end of your bashrc file and save it.<br /><br />
+          <div class="justify-content-center align-items-center" style="margin-bottom:25px; ">
+            <div class="justify-content-center align-items-center" style="margin:0 center;">
+              <img src="../../images/571/bashrc_edit.png" alt="Modifying bashrc" class="card-img-bottom" style="max-width: 1000px">
+            </div>
+          </div>
+          <br />
+          After this you just need to source the bashrc file once.
+          <br /><br /> 
+          <div class="boxed">
+            <tt>
+              source ~/.bashrc
+            </tt>
+          </div>
+          <br />
+          Play around with the turtlebot and try various environments given in the turtlebot tutorial at <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/">http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/</a>.
+          <br /><br />
+          <b>Now you are ready for your first homework task.</b>
+          <br /><br />
+          
+          <h3>Task 1</h3>
+          <h5><b>[6 points]</b></h5>
+          For this task, you will load ‘Turtlebot3 House’ environment in Gazebo and use tele-operations to reach a particular location.
+          <br /><br />
+          Use last 2 digits of your ASU id to determine which loction you need to reach for your submission. For example, if your ASU id is 1234567890 then you will have to reach the location 9 + 0 = 9 in the last column of the grid as shown in the image below.<br /><br />
+          <div class="justify-content-center align-items-center" style="margin-bottom:25px; ">
+            <div class="justify-content-center align-items-center" style="margin:0 center;">
+              <img src="../../images/571/hw0_goal.jpg" alt="Homework0 Goal" class="card-img-bottom" style="max-width: 1000px">
+            </div>
+          <br />
+          You need to submit a pdf file with 5 top-view screen-shots which shows the intermediate as well as the final location of the Turtlebot3.
+          <br /><br />
+          <h3>Bonus Task</h3>
+          <h5><b>[2 points]</b></h5>
+          If you decide to use the world that we provide and solve above stated question using that environment, you will earn <b>2 extra bonus points</b>. The world file and material file are available here. You will need to add the material file in your <tt>~/.gazebo</tt> directory. You should also place the world file in Turtlebot3 Gazebo World directory as well as launch file in the <b>Launch</b> directory and make necessary changes as required.
+          <br /><br />
+          <h3>Submission Note</h3>
+          Please name your submission file using your first name, last name and ASU ID. Your filename should look like <tt>firstname_lastname_asuid.pdf</tt>. Also don’t forget to put your name and ASU ID in the report.
+          <br />
+        </div>
+      </div>
+    </div>
+  
+    <div class = "col-sm-1"></div>
+    <div class="" style="max-width: 100%">
+      <footer class="container" style="color: #000000;">
+        <p class="float-left">
+          <a href="https://cidse.engineering.asu.edu/" target="_blank"><img src="../../images/cidse-2.png" style="width:100%" alt="CIDSE logo"></a>
+          <br />
+          <br />
+          <br />
+          © AAIR Lab, ASU. 2019. All rights reserved.
+        </p>
+        <p class="float-right">
+          <a href="#">Back to top</a><br />
+        </p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script></div>
+  </body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+ <head>
+  <title>AAIR Lab</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/aair_logo_square.png" />
+ </head>
+                                                                                       <!--Navigation Bar-->
+ <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#people">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#publications">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Courses</a>
+                <div class="dropdown-menu">
+                    <a href="courses/571_f19.html" class="dropdown-item">CSE 571: Fall 2019</a>
+                    <a href="courses/571_s19.html" class="dropdown-item">CSE 571: Spring 2019</a>
+                    <a href="courses/471_f18.html" class="dropdown-item">CSE 471: Fall 2018</a>
+                    <a href="courses/591_s18.html" class="dropdown-item">CSE 591: Spring 2018</a>
+                </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+                                                                               <!--Background Cover Photo-->                
+    <div class="img-responsive">
+    </div>    <!-- This class is for the cover pic at the top. Check the CSS file for it's implementation>
+
+                          <!-- Publications-->
+
+
+    <div class="card-main">
+      <div class="card-body">
+        <div class="text-justify">
+<!-- Main content -->
+<h2>Combined Task and Motion Planning Through an Extensible Planner-Independent Interface Layer</h2><br>
+<h3>Siddharth Srivastava, Eugene Fang, Lorenzo Riano, Rohan Chitnis, Stuart Russell, Pieter Abbeel </h3><br>
+<h4>[Proc. IEEE Conference on Robotics and Automation (ICRA), 2014]</h4><br><br>
+<table width=800px>
+<tbody>
+<tr>
+<td>
+
+<b><a href="http://www.cs.berkeley.edu/~siddharth/Publications/icra14.pdf">ICRA-14 version of the paper</a></b><br>
+<b><a href="icra14/full_version.pdf">Full version</a></b><br>
+<b><a href="icra14/source_code.tgz">Source code</a></b><br>
+<b><a href="icra14.html#bib">Extended Bibliography</a></b>
+<br>
+<br>
+    
+  <h3>Videos of Experiments</h3> In all the experiments below,
+  "solution" refers to a low-level solution: a sequence of
+  motion planning trajectories and gripper-close and open events. <br><br>
+  
+  All experiments use the same algorithm and do not use task specific heuristics. 
+
+ 
+  <h4>Object in a Drawer</h4>
+
+  <em>Goal:</em> retrieve an object from the drawer, an object outside
+the drawer may prevent its opening.<br>
+
+  <ul>
+    <li> Task planner cannot determine how far inside the drawer
+    the object is.
+    
+    <li> The feasibility of a task plan for retrieving the
+    inner object depends on this geometric condition.
+  </ul>
+
+<br>  
+<em>Case 1:</em> The object is accessible without removing the
+obstruction.<br>
+
+Our system computes a solution for retrieving the object without
+moving the outer object. <br>
+
+ <iframe width="420" height="315"
+src="http://www.youtube.com/embed/ycdc_aVQErY?autoplay=0" frameborder="0"
+allowfullscreen></iframe><br>
+  
+<br>
+<em>Case 2:</em> The object is too far inside the drawer. <br>
+
+Our system computes a solution that first picks up the outer
+object, then opens the drawer and retrieves the object inside.<br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/p5XEwHM4TzE?autoplay=0" frameborder="0" allowfullscreen></iframe>
+
+
+<h4>Cluttered Table</h4>
+<em>Goal:</em> Pick up the red object.
+  
+<ul>
+<li> Several objects obstruct the target object. Most of these
+objects are themselves obstructed by other objects.
+<li> There is no designated free area where obstructing objects can be stashed.
+</ul>
+
+Our system computes a solution that picks and repositions several
+  objects before grasping the target object.<br>
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/7DUw5L5bx7s?autoplay=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+
+<h4>Dinner Table</h4>
+<em>Goal:</em> Layout a dinner table with three pairs of cups (blue) and bowls (red).
+
+<ul>
+  <li> A tray is available for transportation but not necessary
+  <li> Task planner has to decide whether to use the tray based on plan
+  costs
+  <li> Geometric constraints that the task planner cannot reason about
+  are: object stackability constraints and relative positions of objects.
+</ul>
+
+
+Our system computes a solution that includes decisions for various subproblems:
+  <ul>
+    <li> whether to use the tray
+    <li> the right stacking order of objects on tray
+    <li> which hand to use for manipulation
+    <li> whether to change hands during placement
+    </ul>
+
+<h4>Dinner Layout in Simulation</h4>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/hqaKlD40jw8?autoplay=0" frameborder="0" allowfullscreen></iframe><br>
+
+<h4>The Real PR2 Solving the Dinner Layout Task</h4>
+<!-- <iframe width="420" height="315" src="http://www.youtube.com/embed/ys5xTnUMXvI?autoplay=0" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="420" height="315" src="http://www.youtube.com/embed/M3xrn9FskjA" frameborder="0" allowfullscreen></iframe>
+<a name="bib"></a>
+<br><br><br>
+<h3 >Extended Bibliography</h3> 
+<p class="text-justify">
+Our approach builds upon the vast literature of related work in
+robotics and planning. The field of discrete planning has made several
+advances in scope and scalability, mainly through the development of
+efficient methods for computing heuristic functions automatically from
+a domain definition (e.g. (Helmert et al., 2007)). This results in
+task and domain-independent methods for directed search. Being able to
+utilize this powerful capability was one of our motivations in
+developing an approach that utilizes arbitrary task planners. Various
+researchers have investigated the problem of combining task and motion
+planning (Alami et al., 1998; Volpe et al., 2001; Plaku et al., 2010;
+Hauser, 2010).  However, to the best of our knowledge, very few
+approaches are able to utilize off-the-shelf task and motion planners
+and most rely on specially designed task and/or motion planning
+algorithms. Those that use off-the-shelf task planners make minimal
+use of task plans: typically as one of the inputs in a heuristic
+function for guiding search in a configuration space.  These
+approaches do not address the fundamental problems of the task
+planning description being incomplete and do not attempt to (a)
+represent geometric information in a form that task planners can use
+or (b) correct the task planner's representation with information
+gained through geometric reasoning. In contrast, our approach attempts
+to refine task plans into motion planning solutions and to provide the
+task planner with corrected geometric information if
+necessary.</p> <br>
+
+<p class="text-justify">
+Cambon et al. (2009) propose an approach that bears similarity to
+ours in using location references. The references in their approach
+however are not developed into a system for communicating geometric
+information to the task planner and correcting its domain
+definition. They are also not derived from a specification of action
+preconditions and effects. This approach requires the motion planner
+to use probabilistic roadmaps (PRMs) (Kavraki et al., 1996) with one
+roadmap per movable object, and per permutation of a movable object in
+each gripper for robots like the PR2. The role of the task plan is
+also limited to its length, which is one of the inputs in a heuristic
+function for search. However, their approach is probabilistically
+complete. Kaelbling et al. (2011) combine task and motion planning
+using an input hierarchy and a specifically designed regression-based
+planner that is equipped to be able to utilize task-specific reasoning
+components and regress useful geometric properties.  </p><br>
+
+<p class="text-justify">
+Erdem et al. (2011) propose an approach for combined task and motion
+planning that uses a grid based discretized representation for the
+task planning problem with an ASP solver that supports external
+predicates. The truth values of these predicates are computed using
+dedicated modules written in any programming language.  However,
+discretization with even 2 discretized points per pose-dimension would
+result in intractable task planning problems in our test scenarios,
+which involve high-dimensional robot poses.  In contrast, our focus in
+this paper was on utilizing task planners without requiring external
+predicates and task level discretization. In developing such an
+approach we addressed the key problem of communicating with the task
+planner using references.</p><br>
+
+<p class="text-justify">
+Grasping objects in a cluttered environment is still an open problem
+in robotics. Dogar et al. (2011) present an approach for replacing
+pick-and-place in cluttered environments with push-grasps. This is an
+interesting approach for dealing with obstructions while grasping, and
+would be promising as an additional primitive action in our overall
+approach. An interesting direction of research would be to use
+simulations to determine when the preconditions for safe push-grasps
+hold. In some of our clutterred table test problems for example, it
+would be useful to employ push-grasps when it can be determined that
+none of the objects will be pushed off the table.  Approaches have
+also been developed for motion planning in the presence of movable
+objects (Levihn et al., 2012), but they do not address the general
+problem of combining task and motion planning.</p> <br>
+
+<p class="text-justify">
+Reinvoking task planners relates to replanning for partially
+observable or non-deterministic environments (Talamudapula et al.,
+2010; Yoon et al., 2007).  However, the focus of this paper is on the
+substantially different problem of providing the task planner with
+information gained through geometric reasoning. An alternate
+representation for dealing with large sets of relevant facts in the
+initial state would be to treat them as initially unknown and use a
+partially observable planner with non-deterministic "sensing" actions
+(Bonet et al., 200). Finding offline contingent solutions would be
+impractical in our setting; furthermore, they typically don't exist
+for all possible truth values of geometric predicates.  Wolfe et
+al. (2010) use angelic hierarchical planning to define a hierarchy of
+high-level actions over primitive actions. Although they do not
+address the problem of dealing with geometric preconditions like
+obstructions, our approach could be viewed as using an angelic
+interpretation: pose references in task plans are assumed to have a
+value that satisfies the preconditions, and the interface layer
+attempts to find such values. Approaches for planning modulo theories
+(PMT) (Gregory et al., 2012) and planning with semantic attachments
+(Hertle et al., 2012) address related problems high-level planning in
+hybrid domains. These approaches require an extended planning language
+and corresponding, extended planners. </p><br>
+
+<ul>
+
+
+<li> M. Helmert, P. Haslum, and J. Hoffmann, "Flexible abstraction heuristics for optimal sequential planning," in ICAPS, 2007, pp. 176-183.
+
+<li> R. Alami, R. Chatila, S. Fleury, M. Ghallab, and F. Ingrand, "An
+architecture for autonomy," IJRR, vol. 17, pp. 315-337, 1998.
+
+<li> R. Volpe, I. Nesnas, T. Estlin, D. Mutz, R. Petras, and H. Das,
+"The CLARAty architecture for robotic autonomy," in Proc. of IEEE
+Aerospace Conference, 2001, pp. 121-132.
+
+<li> E. Plaku and G. D. Hager, "Sampling-based motion and symbolic
+action planning with geometric and differential constraints," in ICRA,
+2010, pp. 5002-5008.
+
+<li> K. Hauser, "Task planning with continuous actions and nondeterministic motion planning queries," in Proc. of AAAI Workshop on Bridging
+the Gap between Task and Motion Planning, 2010.
+
+<li> S. Cambon, R. Alami, and F. Gravot, "A hybrid approach to intricate
+motion, manipulation and task planning," IJRR, vol. 28, pp. 104-126,
+2009.
+
+<li> Esra Erdem, Kadir Haspalamutgil, Can Palaz, Volkan Patoglu,
+Tansel Uras, "Combining high-level causal reasoning with low-level
+geometric reasoning and motion planning for robotic manipulation," in ICRA
+2011.
+
+<li> L. Kavraki, P. Svestka, J. Latombe, and M. Overmars, "Probabilistic
+roadmaps for path planning in high-dimensional configuration spaces,"
+IEEE Transactions on Robotics and Automation, vol. 12, pp. 566-580,
+1996.
+<li> L. P. Kaelbling and T. Lozano-Perez, "Hierarchical task and
+motion planning in the now," in ICRA, 2011, pp. 1470-1477.
+
+<li> M. Dogar and S. Srinivasa, "A framework for push-grasping in
+clutter," RSS, 2011.
+
+<li> M. Levihn, J. Scholz, and M. Stilman, "Hierarchical decision theoretic
+planning for navigation among movable obstacles," in WAFR, 2012,
+pp. 19-35.
+
+<li> K. Talamadupula, J. Benton, P. W. Schermerhorn, S. Kambhampati,
+and M. Scheutz, "Integrating a closed world planner with an open
+world robot: A case study," in AAAI, 2010.
+
+<li> S. W. Yoon, A. Fern, and R. Givan, "FF-replan: A baseline for
+probabilistic planning," in ICAPS, 2007.
+
+<li> B. Bonet and H. Geffner, "Planning with incomplete information as
+heuristic search in belief space," in ICAPS, 2000, pp. 52-61.
+
+<li> J. Wolfe, B. Marthi, and S. J. Russell, "Combined task and motion
+planning for mobile manipulation," in ICAPS, 2010, pp. 254-258.
+
+<li> P. Gregory, D. Long, M. Fox, and J. C. Beck, "Planning modulo
+theories: Extending the planning paradigm," in ICAPS, 2012.
+
+<li> A. Hertle, C. Dornhege, T. Keller, and B. Nebel, "Planning with
+semantic attachments: An object-oriented view," in ECAI, 2012.
+
+
+</ul>
+
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+    <div class="" style="max-width: 100%">
+      <footer class="container" style="color: #000000;">
+        <p class="float-left">
+          <a href="https://cidse.engineering.asu.edu/" target="_blank"><img src="images/cidse-2.png" style="width:100%" alt="CIDSE logo"></a>
+          <br>
+          <br>
+          <br>
+          © AAIR Lab, ASU. 2019. All rights reserved.
+        </p>
+        <p class="float-right">
+          <a href="#">Back to top</a></br>
+        </p>
+      </footer>
+    </div>
+
+</body></html>

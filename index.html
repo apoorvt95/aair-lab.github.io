@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>AAIR Lab</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/aair_logo_square.png" />
+  <link rel="stylesheet" href="./css/academicons.min.css"/>
+ </head>
+                                                                                       <!--Navigation Bar-->
+ <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#people">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Courses</a>
+                <div class="dropdown-menu">
+                    <a href="courses/571_f19.html" class="dropdown-item">CSE 571: Fall 2019</a>
+                    <a href="courses/571_s19.html" class="dropdown-item">CSE 571: Spring 2019</a>
+                    <a href="courses/471_f18.html" class="dropdown-item">CSE 471: Fall 2018</a>
+                    <a href="courses/591_s18.html" class="dropdown-item">CSE 591: Spring 2018</a>
+                </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>            
+      </div>
+    </nav>
+		                                                                           <!--Background Cover Photo-->					      
+    <div class="img-responsive" id="home">
+    </div>    <!-- This class is for the cover pic at the top. Check the CSS file for it's implementation>
+
+          							                                  <!-- About Us -->
+    <div class="card-main mx-2" >
+      <div class="card-body mx-0">
+        <div class="row" style="margin-bottom: 70px">
+          <div class="col-md-8 ml-auto mr-auto">
+            <br><br>
+            <h5 class="description text-justify">Our research focuses on autonomous agents and intelligent robots that plan and act under uncertainty to accomplish complex tasks.  We are particularly interested in aspects relating to reliability and generalizability of methods for computing the behavior of autonomous agents, going from theoretical formulations to executable systems. Our methods draw upon formal foundations of mathematical logic, probability theory, machine learning, and well-founded notions of state and action abstractions. 
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mx-2">
+      <div class="card-body mx-0 px-0" style="width:100%">
+											     <!--Research-->
+        <div class="research mx-0 px-0" id="research">            
+          <h1 class="card-title text-center">
+            Research
+          </h1>             
+                                               				     <!--First Row-->
+          <div class="container-fluid"> 
+            <div class="row" >
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0"  style="margin-bottom:25px; ">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Planning and Reasoning Under Uncertainty</h4>
+                    <p class="card-text">
+                      <p class="text-justify">A real robot never has perfect sensors or actuators. Instead, an intelligent robot needs to be able to solve the tasks assigned to it while handling uncertainty about the environment as well as about the effects of its own actions. This is a challenging computational problem, but also one that humans solve on a routine basis (we don't have perfect sensors or actuators either!).</p>
+
+                      <p class="text-justify">We are developing new methods for efficiently expressing and solving problems where the agent has limited, incomplete information about the quantities and identities of the objects that it may encounter.</p>
+                    </p>
+                  </div>
+                  <img src="images/pomdp.png" class="card-img-bottom" alt="POMDP Example" width="200px">
+                  <figcaption class="figure-caption" style="text-align: center;">Open-universe tiger POMDP with an unknown number of moving tigers.</figcaption>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card  rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Generalized Planning</h4>
+                    <p class="card-text">"Be wise, generalize!"
+                      </p><p class="text-justify">Planning is well known to be a hard problem. We are developing methods for acquiring useful knowledge while computing plans for small problem instances. This knowledge is then used to aid planning in larger, more difficult problems. </p>
+
+                      <p class="text-justify"> Often, our approaches can extract algorithmic, generalized plans that solve efficiently large classes of similar problems as well as problems with uncertainty in the quantities of objects that the agent needs to work with. The generalized plans we compute are easier to understand and are generated with proofs of correctness.</p>
+                    <p></p>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N_co3vimPR4" frameborder="0" allowfullscreen></iframe>
+                  </div>  
+                  <figcaption class="figure-caption" style="text-align: center;">PR2 does the laundry using a generalized planner with our integrated task and motion planning system.</figcaption>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Synthesis and Analysis of Abstractions for Autonomy</h4>
+                    <p class="card-text">
+            	        <p class="text-justify">It would be impractical to reason about multi-step tasks such as setting a table for dinner at the lowest level of modeling (e.g.,individual joint movements). In order to build autonomous systems that help in complex, multi-step tasks (where we may actually need help), we draw upon the best example of intelligent systems we know: humans. As humans we rarely think about where to place our knees and elbows. Instead, we reason about achieving abstracted regions of configurations (e.g. reach the 5fth floor).</p>
+
+                      <p class="text-justify">Automatically coming up with the right abstraction to solve a problem efficiently is a notoriously challenging problem. We are developing new methods for utilizing abstractions in sequential decision making (SDM), for evaluating the effect of abstractions on models for SDM, as well as to search for abstractions that would aid in solving a given SDM problem.</p>
+                    </p>
+                  </div>
+                  <img src="images/abstractions.jpg" class="card-img-bottom" alt="Maze Abstraction into Rooms" width="200px">
+                  <figcaption class="figure-caption" style="text-align: center;">Abstraction of a maze into rooms, and critical region labelling for one sample environment.</figcaption>
+                </div>
+             	</div>
+
+         											   <!--Second Row-->
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Integrated Task and Motion Planning</h4>
+                    <p class="card-text text-justify">In order to solve tasks such as doing the laundry, a robot needs to compute high-level strategy (should I use the basket?) as well as the joint movements that it should execute. Unfortunately, approaches for making high-level decisions rely on "task planning" abstractions that are lossy and can produce strategies that have no feasible motion plans.</p>
+
+                      <p class="text-justify">We are developing new methods for dynamically refining the task-planning abstraction to produce combined task and motion plans that are executable.
+                    </p>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M3xrn9FskjA" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <figcaption class="figure-caption" style="text-align: center;">PR2 sets the table for dinner using our integrated task and motion planning system.</figcaption>
+                  <br>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7DUw5L5bx7s" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <figcaption class="figure-caption" style="margin-left: 8px; text-align: center;">PR2 (in simulation) grasps an object in clutter using the same integrated task and motion planning system. </figcaption>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Autonomous Agents That Are Easy to Understand and Safe to Work With</h4>
+                    <p class="card-text">
+                      <p class="text-justify">AI systems have the potential to improve our society in many walks of life. However, today's AI systems require highly trained experts for their customization, configuration, and repair. This not only makes it difficult to realize the potential benefits of AI in society, but also creates large uncertainties in the future of employment for millions in the workforce. On the other hand, perfectly transparent AI systems would present grave risks wherever information needs to be protected, as they may inadvertently reveal sensitive information (thus compromising user privacy or protected data) and may be susceptible to disruptive adversaries.</p>
+
+                      <p class="text-justify">To address these issues, we are developing new ways for AI systems to explain their behavior in a manner aligned with the proficiency of the users. We are also developing methods for computing agent behavior that reduces the amount of information yielded to adversaries while maximizing its understandability by allies. These methods would facilitate spontaneous, productive teamwork between AI systems and people who may be experts in fields other than AI.</p>
+                    </p>
+                  </div>
+                  <img src="images/assistive_planning.JPG" class="card-img-bottom" alt="Assistive Planning" width="200px">
+                  <figcaption class="figure-caption" style="text-align: center;">Examples of explanation and behavior computation.</figcaption>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px; margin-left: 0px">
+                <div class="container-fluid d-flex h-100 flex-column mx-0 px-0">
+                  <div class="row" >
+                    <div class="col mx-0 px-0" >
+                      <div class="card rcard" >
+                      <div class="card-body" >
+                        <h4 class="card-title">Roblocks: An Educational System for AI Planning and Reasoning</h4>
+                        <p class="card-text text-justify">
+                          The objective of this project is to introduce AI planning concepts using mobile manipulator robots. It uses a visual programming interface to make these concepts easier to grasp. Users can get the robot to accomplish desired tasks by dynamically populating puzzle shaped blocks encoding the robot's possible  actions. This allows users to carry out navigation, planning and manipulation by connecting blocks instead of writing code. AI planning techniques are used to prune down the vast number of actions possible to suggest only the truly feasible and relevant actions.
+                        </p>
+                      </div>
+                      <img src="images/roblocks.png" class="card-img-bottom" alt="Roblocks System" width="200px">
+                      <figcaption class="figure-caption" style="text-align: center;">The Roblocks system in action.</figcaption>
+                    </div>
+                    </div>
+
+                  </div>
+                  <div class="row flex-fill mx-0 px-0" style="margin-top:20px;">
+                    <div class="col mx-0 px-0">
+                      <div class="card feedcard mx-1" >
+                        <div class="card-body" >
+                          <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/AAIRLabASU">Tweets by AAIRLabASU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="container-fluid mx-0 px-0">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-0 px-0">
+                  <div class="funding-logos">
+                    &nbsp; &nbsp;
+                    <a href="https://www.darpa.mil/" target="_blank" ><img src="images/darpa.png" height="100" alt="DARPA logo"></a>
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    <a href="https://www.nsf.gov/" target="_blank"><img src="images/nsf.png" height="100" alt="NSF logo"></a>
+                    &nbsp; &nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+                                                                                            <!--People-->  
+    <div class="card mx-2">
+      <div class="card-body">
+        <div class="people" id="people">
+          <h1 class="card-title text-center">
+            People
+          </h1>
+          <br><br>
+          										    <!--First Row-->
+          <center>
+            <a href="http://siddharthsrivastava.net/" target="_blank"><img class="rounded-circle" src="images/srivastava.jpg" alt="Siddharth Srivastava" width="140" height="140"></a>
+            </br></br><h4><a href="http://siddharthsrivastava.net/" target="_blank">Siddharth Srivastava</a></h4></a>
+            <p>Assistant Professor</br>Director, AAIR Lab</p>
+          </center>
+
+          </br></br></br>
+  											    <!--Second Row-->
+          
+          <center>
+            <div class="row">
+                <div class="col-lg-4">
+                  <img class="rounded-circle" src="images/rushang2.jpg" alt="Rushang Karia" width="140" height="140">
+                  </br></br><h4>Rushang Karia</h4>
+                  <p>Ph.D. Student</p>
+                </div>            	
+
+              <div class="col-lg-4">
+                	<img class="rounded-circle" src="images/naman.jpg" alt="Naman P Shah" width="140" height="140">
+                	</br></br><h4>Naman P Shah</h4>
+                	<p>Ph.D. Student</p>
+              	</div>
+
+            	<div class="col-lg-4">
+                <a href="https://pulkitverma25.github.io" target="_blank"><img class="rounded-circle" src="images/pulkit.jpg" alt="Pulkit Verma" width="140" height="140"></a>
+                	</br></br><h4><a href="https://pulkitverma25.github.io" target="_blank">Pulkit Verma</a></h4>
+                	<p>Ph.D. Student</p>
+              	</div>
+              
+            </div>
+          </center>
+
+          </br></br></br>
+                                              						       <!--Third Row--> 
+          <center>
+            <div class="row">
+              <div class="col-lg-4">
+                <a href="https://chiravdave.github.io" target="_blank"><img class="rounded-circle" src="images/chirav.jpg" alt="Chirav Dave" width="140" height="140"></a>
+                </br></br><a href="https://chiravdave.github.io" target="_blank"><h4>Chirav Dave</h4> </a>
+                <p>M.S. Student</p>
+              </div>
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="images/kislay2.jpg" alt="Kislay Kumar" width="140" height="140">
+                </br></br><h4>Kislay Kumar</h4>
+                <p>M.S. Student</p>
+              </div>
+              <div class="col-lg-4">.
+                <img class="rounded-circle" src="images/rashmeet.jpeg" alt="Rashmeet K Nayyar" width="140" height="140">
+                </br></br><h4>Rashmeet K Nayyar</h4>
+                <p>M.S. Student</p>
+              </div>
+            </div>
+          </center>
+          
+          </br></br></br>
+                                                                 <!--Forth Row--> 
+
+          <center>
+
+            <div class="row">
+
+
+              <div class="col-lg-7">
+                <a href="https://fetchrobotics.com/robotics-platforms/fetch-mobile-manipulator/" target="_blank"><img class="rounded-circle" src="images/alfred.jpg" alt="Alfred" width="140" height="140"></a>
+                </br></br><a href="https://fetchrobotics.com/robotics-platforms/fetch-mobile-manipulator/" target="_blank"><h4>Alfred</h4> </a>
+                <p>Robot</p>
+              </div>
+  
+             <div class="col-lg-2">
+                <a href="https://new.abb.com/products/robotics/industrial-robots/irb-14000-yumi" target="_blank"><img class="rounded-circle" src="images/yumi.jpg" alt="YuMi" width="140" height="140"></a>
+                </br></br><a href="https://new.abb.com/products/robotics/industrial-robots/irb-14000-yumi" target="_blank"><h4>YuMi</h4> </a>
+                <p>Robot</p>
+              </div>
+   
+
+            </div>
+          </center>
+
+ 
+ 					<center>
+						<h4>Alumni</h4>
+						<br>
+
+						<div class="row justify-content-center">
+						  <div class="col">
+                <div class="table-responsive">
+  								<table class="table borderless" style="width:100%; max-width: 500px;">
+  								  <thead>
+  								  </thead>
+  								  <tbody>
+                      <tr >
+                        <td>Daniel Molina</td>
+                        <td>M.S.</td>
+                        <td>Aug 2017 - May 2019</td>
+                      </tr>
+  								    <tr >
+  								      <td><a href="http://www.midhunpm.com/" target="_blank"> Midhun P M </a></td>
+  								      <td>M.C.S.</td>
+  								      <td>Dec 2017 - Dec 2018</td>
+  								    </tr>
+                      <tr>
+                        <td>Julia Nakhleh</td>
+                        <td>B.S.</td>
+                        <td>Aug 2018 - May 2019</td>
+                      </tr>     
+                      <tr>
+                        <td>Ryan Christensen</td>
+                        <td>B.S.</td>
+                        <td>Aug 2017 - May 2018</td>
+                      </tr> 
+  								    <tr>
+  								      <td>Perry Wang</td>
+  								      <td>B.S.</td>
+  								      <td>Aug 2017 - May 2018</td>
+  								    </tr>							
+
+  								  </tbody>
+  								</table>
+                </div>
+							</div>
+						</div>
+					</center>
+
+          <center>
+            <div class="col-lg-6 justify-content-center align-items-center" style="margin-bottom:25px;">
+              <div class="card justify-content-center align-items-center" style="margin:0 center;">
+                <div class="card-body">
+                  <h4 class="card-title">AAIR Lab Group - Fall 2018</h4>
+                  <img src="images/group.jpg" class="card-img-bottom">
+                </div>  <div class="container"> 
+              </div>
+            </div>
+          </center>
+	            <!-- src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" if image not available-->          
+        </div> 
+      </div>
+    </div>	
+
+                              <!-- Publications-->
+
+    <div class="card mx-2" >
+      <div class="card-body">
+        <div class="publications"  id="publications">
+          <h1 class="card-title text-center" >
+            Publications
+          </h1>
+          <br>
+
+          <div id="paperByCategory" align="center">
+          Show by area:  <button class="shadow-none badge badge-light active" onclick="filterPapers('all')"> Show all</button>
+            <button class="shadow-none badge badge-primary" onclick="filterPapers('abstraction')">State/Action Abstractions</button>
+            <button class="shadow-none badge badge-success" onclick="filterPapers('assistPlanning')">Assistive Planning</button>
+            <button class="shadow-none badge badge-warning" onclick="filterPapers('learning')">Learning</button>
+            <button class="shadow-none badge badge-info" onclick="filterPapers('genTransfer')">Plan Generalization and Transfer</button>
+            <button class="shadow-none badge badge-danger" onclick="filterPapers('probInference')">Probabilistic Inference</button>
+            <button class="shadow-none badge badge-secondary" onclick="filterPapers('mobManipulation')">Mobile Manipulation</button>
+            <button class="shadow-none badge badge-dark" onclick="filterPapers('partialObservability')">Partial Observability</button>
+            <button class="shadow-none badge badge-pink" onclick="filterPapers('generalizedPlanning')">Generalized Planning</button>
+          </div>
+          <!--
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-success">Assistive Planning</span>
+                <span class="badge badge-warning">Learning</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-danger">Probabilistic Inference</span>
+                <span class="badge badge-secondary">Mobile Manipulation</span>
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+          -->
+
+          <br>
+          <div class="paper assistPlanning abstraction">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/ijcai19.pdf">Why Can't You Do That HAL? Explaining Unsolvability of Planning Tasks</a></em>.<br>
+                Sarath Sreedharan, Siddharth Srivastava, David Smith, Subbarao Kambhampati.<br>
+                In Proceedings of IJCAI, 2019. <br>
+                <span class="badge badge-success">Assistive Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper mobManipulation abstraction">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/ss_planrob19.pdf">Anytime Integrated Task and Motion Policies for Stochastic Environments</a></em>.<br>
+                Naman Shah, Siddharth Srivastava.<br>
+                ICAPS 2019 Workshop on Planning and Robotics, 2019. <br>
+                <span class="badge badge-secondary">Mobile Manipulation</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper learning genTransfer abstraction">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/mks_planrob19.pdf">Learning Critical Regions for Robot Planning Using Convolutional Neural Networks</a></em>.<br>
+                Daniel Molina, Kislay Kumar, Siddharth Srivastava.<br>
+                ICAPS 2019 Workshop on Planning and Robotics, 2019. <br>
+                <span class="badge badge-warning">Learning</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability assistPlanning">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/ksk_aaai19.pdf">A Unified Framework for Planning in Adversarial and Cooperative Environments</a></em>. <br>
+                Anagha Kulkarni, Siddharth Srivastava, Subbarao Kambhampati.<br>
+                In Proceedings of AAAI, 2019.<br>
+                <span class="badge badge-success">Assistive Planning</span>
+                <span class="badge badge-dark">Partial Observability</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper probInference learning">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/wshdr_icml18.pdf">Discrete-Continuous Mixtures in Probabilistic Programming: Extended Semantics and General Inference Algorithms</a></em>. <br>
+                Yi Wu, Siddharth Srivastava, Nicholas Hay, Simon Du, Stuart Russell.<br>
+                In Proceedings of ICML, 2018.<br>
+                <span class="badge badge-danger">Probabilistic Inference</span>
+                <span class="badge badge-warning">Learning</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstraction assistPlanning">
+            <ul class="papers">
+              <li>
+                <em><a href="Publications/ssk_ijcai18.pdf">Hierarchical Expertise Level Modeling for User-Specific Contrastive Explanations</a></em>. <br>
+                Sarath Sreedharan, Siddharth Srivastava, Subbarao Kambhampati.<br>
+                In Proceedings of IJCAI, 2018.<br>
+                <span class="badge badge-success">Assistive Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer learning">
+            <ul class="papers">
+              <li>
+                <em><a href="Publications/icaps18_grp.pdf">Learning Generalized Reactive Policies using Deep Neural Networks</a></em>.<br>
+                Edward Groshev, Aviv Tamar, Maxwell Goldstein, Siddharth Srivatava, Pieter Abbeel.<br>
+                In Proceedings of ICAPS, 2018. <br>
+                <a href="Publications/sirle18_grp.pdf">Older version</a>, AAAI Spring Symposium  on Integrating Representation, Reasoning, Learning and Execution (SIRLE '18).<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-warning">Learning</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstraction">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/sirle18_safe_abstraction.pdf">Safe Goal-Directed Autonomy and the Need for Safe Abstractions</a></em>.<br>
+                Siddharth Srivastava.<br>
+                In Proceedings of AAAI Spring Symposium on Integrating Representation, Reasoning, Learning and Execution (SIRLE '18).<br>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstractionpartialObservability">
+            <ul class="papers">
+              <li>
+                <em><a href="Publications/rsbsk_ECAI16.pdf">Hierarchical Strategy Synthesis for Pursuit-Evasion Problems</a></em>.<br>
+                Rattanachai Ramaithitima, Siddharth Srivastava, Subhrajit Bhattacharya, Alberto Speranzon, Vijay Kumar.<br>
+                In Proceedings of ECAI, 2016.<br> 
+                <span class="badge badge-primary">State/Action Abstractions</span>                
+                <span class="badge badge-dark">Partial Observability</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstraction partialObservability">
+            <ul class="papers">                
+              <li> 
+                <em><a href="Publications/bsr_ijcai16.pdf">Markovian State and Action Abstractions for MDPs via Hierarchical MCTS</a></em>.<br>
+                Aijun Bai, Siddharth Srivastava, Stuart Russell.<br>
+                In Proceedings of IJCAI, 2016.<br>
+                <span class="badge badge-primary">State/Action Abstractions</span>                
+                <span class="badge badge-dark">Partial Observability</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper learning mobManipulation">
+            <ul class="papers">   
+              <li> 
+                <em><a href="Publications/chgsgla_icra16.pdf">Guided Search for Task and Motion Plans Using Learned Heuristics</a></em>.<br>
+                Rohan Chitnis, Dylan Hadfield-Menell, Abhishek Gupta, Siddharth Srivastava, Edward Groshev, Christopher Lin, Pieter Abbeel.<br>
+                In Proceedings of ICRA, 2016.<br>
+                <span class="badge badge-secondary">Mobile Manipulation</span>
+                <span class="badge badge-warning">Learning</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstraction">
+            <ul class="papers">   
+              <li>
+                <em><a href="Publications/srp_aaai16.pdf">Metaphysics of Planning Domain Descriptions</a></em>.<br>
+                Siddharth Srivastava, Stuart Russell, Alessandro Pinto.<br>
+                In Proceedings of AAAI, 2016.<br>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability learning abstraction generalizedPlanning genTransfer">
+            <ul class="papers">   
+              <li> 
+                <em> <a href="Publications/szgar_aaai15.pdf"> Tractability of Generalized Planning</a></em>.<br>
+                Siddharth Srivastava, Shlomo Zilberstein, Abhishek Gupta, Pieter Abbeel, Stuart Russell.<br>
+                In Proceedings of AAAI, 2015.<br>                
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-warning">Learning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-pink">Generalized Planning</span>   
+                <span class="badge badge-info">Plan Generalization and Transfer</span>             
+            </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability probInference">
+            <ul class="papers">  
+              <li> 
+                <em><a href="Publications/srrc14_oupomdp.pdf">First-Order Open-Universe POMDPs</a></em>.<br> 
+                Siddharth Srivastava, Stuart Russell, Paul Ruan, Xiang Cheng. <br>
+                In Proceedings of the Conference on Uncertainty in AI (UAI), 2014.<br>
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-danger">Probabilistic Inference</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper mobManipulation abstraction">
+            <ul class="papers">   
+              <li> 
+                <em><a href="Publications/icra14.pdf">Combined Task and Motion Planning Through an Extensible Planner-Independent Interface Layer</a></em>.<br> 
+                <a href="icra14.html">Videos of experiments (PR2 + sim)</a><br>
+                Siddharth Srivastava, Eugene Fang, Lorenzo Riano, Rohan Chitnis,
+                Stuart Russell, Pieter Abbeel. <br>
+                In Proceedings of the IEEE Conference on Robotics and
+                Automation (ICRA), 2014.<br>
+                <span class="badge badge-secondary">Mobile Manipulation</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper mobManipulation">
+            <ul class="papers">  
+              <li> 
+                <em><a href="Publications/srra_planrob13.pdf">Using Classical Planners for Tasks with Continuous Operators in Robotics</a></em>.<br>
+                Siddharth Srivastava, Lorenzo Riano, Stuart Russell, Pieter Abbeel.<br>
+                ICAPS Workshop on Planning and Robotics,  2013. <br>
+                <span class="badge badge-secondary">Mobile Manipulation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability probInference">
+            <ul class="papers">  
+              <li>  
+               <em><a href="Publications/oupomdp_tr.pdf">First-Order Open-Universe POMDPs: Formulation and Algorithms</a></em>.<br>
+                Siddharth Srivastava, Xiang Cheng, Stuart Russell, Avi Pfeffer<br>
+                Technical Report EECS-2013-243, EECS Department, UC Berkeley, 2013.<br>
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-danger">Probabilistic Inference</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer generalizedPlanning abstraction">
+            <ul class="papers">    
+              <li> 
+                <em><a href="Publications/siz12_aij.pdf">Applicability Conditions for Plans with Loops: Computability Results and Algorithms</a></em>. <br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein. <br>
+                Artificial Intelligence, Vol. 191-192, pp. 1-19, 2012. <br>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability abstraction generalizedPlanning genTransfer">
+            <ul class="papers">   
+              <li> 
+                <em><a href="Publications/szig_aaai11.pdf">Qualitative Numeric Planning</a></em>.<br>
+                Siddharth Srivastava, Shlomo Zilberstein, Neil Immerman, Hector Geffner. <br>
+                In Proceedings of the Twenty Fifth Conference on AI (<a href="http://www.aaai.org">AAAI</a>), 2011.<br>
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper partialObservability generalizedPlanning genTransfer abstraction">
+            <ul class="papers">
+              <li> 
+                <em><a href="Publications/siz_aaai11.pdf">Termination and Correctness Analysis of Cyclic Control</a></em>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein. <br>
+                In Proceedings of the Twenty Fifth Conference on AI (<a href="http://www.aaai.org">AAAI</a>), 2011.  <br> 
+                <span class="badge badge-dark">Partial Observability</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer generalizedPlanning abstraction">
+            <ul class="papers">    
+              <li> 
+                <em><a href="Publications/sizz_icaps11.pdf">Directed Search for Generalized Plans Using Classical Planners</a></em>. [<a href="http://videolectures.net/icaps2011_srivastava_planners/">Video</a>]<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein, Tianjiao (Cathy) Zhang. <br>
+                In Proceedings of the Twenty First International Conference on
+                Automated Planning and Scheduling (<a  href="http://www.icaps-conference.org">ICAPS</a>) 2011.<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer abstraction generalizedPlanning">
+            <ul class="papers">  
+              <li> 
+                <em><a href="Publications/thesisSummary.pdf">Foundations and Applications of Generalized Planning</a></em>.<br> 
+                Siddharth Srivastava.<br>
+                <a href="http://www.eccai.org/aicom.shtml"> AI Communications</a> Vol. 24, pp. 349-351, 2011.<br>
+                <em>This article summarizes the contributions of Dr. Srivastava's thesis.</em><br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer abstraction generalizedPlanning">
+            <ul class="papers">  
+              <li> 
+                <em><a href="Publications/siz11_aij.pdf">A New Representation and Associated Algorithms for Generalized Planning</a></em>. <br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein. <br>
+                Artificial Intelligence (<a href="http://www.journals.elsevier.com/artificial-intelligence/">AIJ</a>), 175:2, 615-647, 2011.<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers">    
+              <li> 
+                <em> <a href="Publications/siz_icaps10.pdf">Computing
+                Applicability Conditions for Plans with Loops</a></em>. [<b>Best Paper Award</b>] (<a href="Publications/siz_abacusTR.pdf">TechReport</a> with more results and detailed proofs) <br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein. <br>
+                In Proceedings of the Twentieth International Conference on
+                Automated Planning and Scheduling (<a
+                href="http://www.icaps-conference.org">ICAPS</a>), 2010. <br>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer abstraction generalizedPlanning">
+            <ul class="papers">  
+              <li> 
+                <em><a href="Publications/thesis.pdf">Foundations and Applications of Generalized Planning</a> (readable version)</em>.<br>
+                Siddharth Srivastava.<br>
+                Doctoral Dissertation, Department of Computer Science, University of Massachusetts Amherst, 2010. [<a href="Publications/thesisSummary.pdf">Summary</a>]<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>  
+          <div class="paper genTransfer generalizedPlanning abstraction">
+            <ul class="papers">    
+              <li>
+                <em> <a href="Publications/sizaamas10.pdf">Merging Example Plans into Generalized Plans for Non-deterministic
+                Environments</a></em>. <br> 
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein. <br>
+                In Proceedings of the Ninth International Conference on Autonomous Agents and Multiagent Systems
+                (<a href="http://www.ifaamas.org/">AAMAS</a>), 2010.<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper genTransfer generalizedPlanning abstraction">
+            <ul class="papers">    
+              <li> 
+                <a href="Publications/siz_sara09.pdf"><em>Abstract
+                Planning with Unknown Object Quantities and Properties</em></a>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo Zilberstein.<br>
+                Eighth Symposium on Abstraction, Reformulation and Approximation (<a href="http://webdocs.cs.ualberta.ca/~nathanst/sara/index.html">SARA</a>),
+                2009. [<a href="Presentations/sara09.pdf">slides</a>]<br>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper abstraction">
+            <ul class="papers"> 
+              <li> 
+                <a href="Publications/LMCS09.pdf"><em>Simulating
+                Reachability using First-Order Logic with Applications to
+                Verification of Linked Data Structures</em></a>.<br>
+                T. Lev-Ami, N. Immerman, T. Reps, M. Sagiv, S. Srivastava and G. Yorsh.<br>
+                Logical Methods in Computer Science, 5(2), Paper 12, 2009. <br>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers"> 
+              <li> 
+                <a href="Publications/siz_vvps09.pdf"><em>Finding
+                Plans with Branches, Loops and Preconditions</em></a>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein.<br>
+                ICAPS 2009 Workshop on Verification and Validation of Planning and
+                Scheduling Systems,  2009. [<a href="Presentations/vvps09.pdf">slides</a>]<br>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers">             
+              <li> 
+                <a href="Publications/siz_gp09.pdf"><em>Challenges
+                in Finding Generalized Plans</em></a>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo  Zilberstein.<br>
+                ICAPS 2009 Workshop on Generalized Planning: Macros, Loops, Domain Control,
+                2009. [<a href="Presentations/gp09.pdf">slides</a>]<br>
+                <span class="badge badge-pink">Generalized Planning</span>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+              </li>
+            </ul>
+          </div>
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers">     
+              <li> 
+                <a href="Publications/learnGen_aaai08.pdf"><em>Learning Generalized Plans Using Abstract
+                Counting</em></a>. <br>
+                Siddharth Srivastava, Neil Immerman, Shlomo Zilberstein.<br>
+                In Proceedings of The Twenty Third Conference on Artificial
+                Intelligence (<a href="http://www.aaai.org/Conferences/AAAI/aaai08.php">AAAI</a>), 2008. [<a href="Presentations/aaai08.pdf">slides</a>]<br>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+              </li>
+            </ul>
+          </div>  
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers">                 
+              <li> 
+                <a href="Publications/genPlan_isaim08.pdf"> <em>Using
+                Abstraction for Generalized Planning</em></a>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo Zilberstein. <br>
+                International Symposium on AI and Mathematics
+                (<a href="http://isaim2008.unl.edu/">ISAIM</a>), 2008.<br>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+              </li>
+            </ul>
+          </div>  
+          <div class="paper generalizedPlanning abstraction genTransfer">
+            <ul class="papers">
+              <li>  
+                <a href="Publications/genPlan_TR07-41.pdf">
+                <em> Using Abstraction for Generalized Planning (Extended
+                Version)</em></a>.<br>
+                Siddharth Srivastava, Neil Immerman, Shlomo Zilberstein.<br>
+                Technical Report 07-41, Deptt. of Computer
+                Science, University of Massachusetts, Amherst, 2007.<br>
+               <span class="badge badge-primary">State/Action Abstractions</span>
+                <span class="badge badge-info">Plan Generalization and Transfer</span>
+                <span class="badge badge-pink">Generalized Planning</span>
+              </li>
+            </ul>
+          </div>  
+          <div class="paper abstraction">
+            <ul class="papers">
+               <li> 
+                <a href="Publications/cade05.pdf"><em>
+                Simulating Reachability Using First-Order Logic With Applications to
+                Verification of Linked Data Structures</em></a>.<br>
+                T. Lev-Ami, N. Immerman, T. Reps, M. Sagiv, S. Srivastava and G. Yorsh.<br>
+                International Conference on  Automated Deduction, 2005.</li>
+                <span class="badge badge-primary">State/Action Abstractions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mx-2">
+      <div class="card-body">
+        <div class="contact" id="contact">
+          <h1 class="card-title text-center">
+            Contact Us
+          </h1>
+          <br><br>
+          <div class="container col-lg-12">
+					  <img src="images/brickyard.jpg" alt="BYENG Building" style="width:100%;">       <br>    
+            <center>
+					  <div class="text-center" style="color: #000000;" >
+
+            <h4><a href="https://scholar.google.com/citations?user=H3ZnCqYAAAAJ&hl=en" target="_blank" class="ai ai-google-scholar-square"><span class="label">Google Scholar</span></a>&nbsp;
+            <a href="https://twitter.com/AAIRLabASU" target="_blank" class="icon fa-twitter-square"><span class="label">Twitter</span></a>&nbsp;
+			        <a href="mailto:aair.lab@asu.edu" class="icon fa-envelope-square"></a>&nbsp; aair.lab@asu.edu
+            </h4>
+			      </div>
+            
+            <div class="text" style="color: #000000; ">
+            <h4>  Brickyard Engineering #501, 699 S. Mill Ave., Tempe, AZ - 85281</h4>
+            </div>
+            </center>
+			      
+            <br>
+
+					  
+				</div>
+			</div>
+		</div>
+    </div>     
+    <div class="" style="max-width: 100%">
+      <footer class="container" style="color: #000000;">
+        <p class="float-left">
+          <a href="https://cidse.engineering.asu.edu/" target="_blank"><img src="images/cidse-2.png" style="width:100%" alt="CIDSE logo"></a>
+          <br>
+          <br>
+          <br>
+          © AAIR Lab, ASU. 2019. All rights reserved.
+        </p>
+        <p class="float-right">
+          <a href="#">Back to top</a></br>
+        </p>
+      </footer>
+    </div>
+    <script src="js/filterPapers.js"></script>
+  </body>
+</html>

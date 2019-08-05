@@ -1,0 +1,265 @@
+@import url("font-awesome.min.css");
+@import url("academicons.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+body {
+    background-color: #FFFFFF;
+    overflow-x:hidden;
+}
+
+footer {
+  overflow-x:hidden;
+}
+
+.img-responsive { 
+    background: url("../images/banner2.png");
+    margin: auto;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: 15% 40%;
+    background-size: cover;
+}
+
+.funding-logos{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.mx-2{
+  margin-right: ($spacer * .5);
+  margin-left: ($spacer * .5);
+}
+
+.mx-0{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.px-0{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.img-max {
+  max-width: 500px;
+  width:100%;
+}
+
+
+.card-main
+{
+    margin-bottom: 10px;
+     margin-left:20px;
+     margin-right:20px;
+     margin-top:-20px;
+     background-color: #dcdcdc;
+     z-index: 1;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 25px;
+ }
+.card{
+     margin-bottom:20px;
+     margin-left:20px;
+     margin-right:20px;
+     margin-top:30px;
+     background-color: #dcdcdc;
+     z-index: 1;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 25px;
+}
+
+h5{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+h4{
+		font-size: 1.4em;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.description {
+    padding: 10px 0 0;
+}
+
+.people{
+    padding-left:20px;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+.rounded-circle{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+}
+
+.research {
+    border-radius: 10px;
+    padding-left:20px;
+    padding-top: 70px;
+    margin-top: -70px;
+
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+.rcard {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+.feedcard {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+.publications{
+  padding-left:20px;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.show {
+  display: block;
+}
+
+.noshow {
+    display: none;
+}
+ul.papers a{
+color: #4080C0;
+color: #FF8F00;
+color: #4080FF;
+}
+
+ul.papers a:hover{
+color: #3949AB;
+}
+
+.shadow-none{
+	border-color: transparent;
+}
+
+.table {
+    margin: 0px auto;
+    float: none;
+    border: none;
+}
+.borderless td, .borderless th {
+    border: none;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  text-align: left;
+  color: #000000;
+}
+
+.top-left {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  text-align: right;
+  color: #000000;
+}
+
+.badge-primary{
+    background-color: #37559B;
+}
+
+.badge-success{
+    background-color: #5CC8FF;  
+    color: #000000;
+}
+
+.badge-warning{
+    background-color: #3A7CA5;  
+    color: #ffffff;
+}
+
+.badge-info{
+    background-color: #0FA3B1;
+}
+
+.badge-danger{
+    background-color: #0090C1;  
+
+}
+
+.badge-secondary{
+    background-color: #80DED9;  
+    color: #000000;
+}
+
+.badge-dark{
+    background-color: #59CD90;  
+    color: #000000;
+
+} 
+
+.badge-pink{
+    background-color: #8769B1;  
+    color: #FFFFFF;
+}
+/* Icons */
+
+	.icon {
+		text-decoration: none;
+		color: #404040;
+		
+	}
+
+	.icon:before {
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: 1.25em;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+	}
+
+	.icon > .label {
+		display: none;
+	}
+
+	.ai {
+		text-decoration: none;
+		color: #404040;
+	}
+
+	.ai:before {
+		display: inline-block;
+		font-family: Academicons;
+		font-size: 1.25em;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+	}
+
+	.ai > .label {
+		display: none;
+	}
