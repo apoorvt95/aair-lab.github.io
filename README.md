@@ -1,2 +1,2 @@
-# aair-lab.github.io
-Webpage of AAIR Lab, ASU
+# Autonomous Agents and Intelligent Robots Lab, ASU 
+![alt tag](./images/aair_logo.png)
