@@ -21,10 +21,6 @@ ptitle{
     /* font-style: italic; */
 }
 
-twitter-timeline {
-    width: 100vw !important;
-}
-
 .boxed {
   border: 1px solid black ;
   background-color: #d4ebf2;
