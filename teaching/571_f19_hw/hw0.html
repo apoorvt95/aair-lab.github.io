@@ -79,7 +79,7 @@
                 </li>
                 <br />
                 <li>
-                  <b><i>Use virtual machine</i></b>: You can use applications like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> to create a virtual machine. Some relevant tutorials are:
+                  <b><i>Use Ubuntu on virtual machine</i></b>: You can use applications like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> to create a virtual machine. Some relevant tutorials are:
                   <ol type="i">
                     <li><a href="https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html" target="_blank">How to create a new VM?</a></li>
                     <li><a href="https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html" target="_blank">How to import an existing VM?</a></li>
@@ -114,7 +114,10 @@
                 </tt>
               </div>
               <br />
-              ROS Tutorials are available at <a href="http://wiki.ros.org/ROS/Tutorials">http://wiki.ros.org/ROS/Tutorials</a>. This includes tutorials for installing and configuring ROS. For this assignment you will need to install and configure ROS and go over beginner’s tutorials for python to make yourself familier with ROS. After this homerwork, students should be able to write simple service-client functionalities and simple subscriber-publisher on their own.
+            </li>
+            <li>
+              <h4>ROS Tutorials</h4>
+              Do the beginner level ROS Tutorials (Python version only) which are available at <a href="http://wiki.ros.org/ROS/Tutorials">http://wiki.ros.org/ROS/Tutorials</a>. This includes tutorials for installing and configuring ROS. For this assignment install and configure ROS and go over beginner’s tutorials for python to make yourself familier with ROS. After this homerwork, students should be able to write simple service-client functionalities and simple subscriber-publisher on their own.
             </li>
           </ol>
         
@@ -167,7 +170,9 @@
             </tt>
           </div>
           <br />
-          Now you are ready to use Turtlebot3 with Gazebo. You will find tutorials on Turtlebot3 simulator with Gazebo at <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/">http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/</a>. 
+          Now you are ready to use Turtlebot3 with Gazebo. 
+
+          Do the tutorials on Turtlebot3 simulator with Gazebo at <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/">http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/</a>. 
           <br />
           A more comprehensive resource to learn about Turtlebot is <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/">http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/</a>
           <br /><br />
@@ -215,6 +220,8 @@
                   <img src="../../images/571/gazebo_tb3_1.png" alt="Turtlebot3 Gazebo Init" class="card-img-bottom" style="max-width: 1000px">
                 </div>
               </div>
+              <br />
+
             </li>
             <li> 
               Teleoperation on Gazebo can be performed using the following command. Run this in a new terminal, and don’t forget to perform steps 1 and 2 in this new terminal.
@@ -240,6 +247,14 @@
               </div>
             </li>
           </ol>
+          To use other environments, you must use the correct launch files. For example, to launch the "Turtlebot3 House" environment you should use the following command:
+          <br/><br/>
+              <div class="boxed">
+                <tt>
+                  roslaunch turtlebot3_gazebo turtlebot3_house.launch
+                </tt>
+              </div>
+              <br/>
           <br />
 
           <h3>Tip</h3>
