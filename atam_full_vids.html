@@ -57,21 +57,66 @@
     <div class="card-main mx-2" >
       <div class="card-body mx-0">
         <div class="publications"  id="publications">
-          <h2>Learn and Link: A Learning-Amenable Planning Paradigm</h2><br>
-          <h3>Daniel Molina, Kislay Kumar, Siddharth Srivastava</h3><br>
+          <h2>Anytime Task and Motion Polcies for Stochastic Environments</h2><br>
+          <h3>Naman Shah, Kislay Kumar, Pranav Kamojhalla, Deepak Kala Vasudevan, Siddharth Srivastava </h3><br>
           <h4>[Submitted, IEEE Conference on Robotics and Automation (ICRA), 2020]</h4><br>
 
-          <b><a href="ll_planners/ll_full_version.pdf">Full version of the submitted paper</a></b><br>
-          <b>Source code</b><br>
-          <ul>
-            <li><a href="ll_planners/ll_planners.zip">LL Planners</a></li>
-            <li><a href="ll_planners/data_generation.zip">Data Generation</a></li>
-          </ul>
+
+          <b><a href="atam/atam_full_version.pdf">Full version of the submitted paper</a></b><br>
+          <b><a href="https://github.com/AAIR-lab/Anytime-Task-and-Motion-Policies" target="_blank">Source code</a></b><br>
           <br>
           <h3>Presentation Video</h3>
-          <iframe width="420" height="315" src="http://www.youtube.com/embed/vXs2lxyAIfM?autoplay=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/zz1iIsUHJqM?autoplay=0" frameborder="0" allowfullscreen></iframe>
+
+          <br><br><br>
+
+          <h3> Video Experiments </h3>
+          In all the experiments below, "solution" refers to a low-level solution: a sequence of motion planning trajectories and gripper-close and open events. 
+
+          <br><br>
+
+          <h4> Cluttered world </h4> </br>
+          <i>Goal</i>: Pick up the black object.
+            <ul>
+              <li>Several objects are crushable, i.e. the Fetch can crush them while picking them up. If the object is crushed it needs to be placed in the recycling box.</li>
+              <li>Several objects obstruct the target object, which needs to be replaced somewhere else to replace to reach the target object.</li>
+              <li>There is no designated free area where obstructing objects can be stashed.</li>
+            </ul>
+
+          Our system computes a solution that picks and repositions several objects (placing the objects in recycle box if they are crushed) before grasping the target object.
           <br/ ><br/ >
 
+          <h5> Fetch picks up the target bottle (simulation). </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/ZLBy6pFAM6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h5> Fetch picks up the target bottle. (real world) </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/9uQWJPA8VXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <h5> Fetch picks up the delicate bottle, observes that the bottle is not crushed. </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/hh2_5iniJg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <h5> Fetch picks up the delicate bottle, observes that the bottle is crushed. </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/sLDXlfh8gnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br><br>
+
+        <h4> Building structures with Keva planks </h4> <br>
+          <i>Goal</i>: Build the given Keva structure usin ABB YuMi.
+          <br>
+            <ul>
+              <li>Human can place a plank at one of the predefined locations. YuMi observes the environment and picks the plank from that location. </li>
+            </ul>
+
+          Our system computes and refines the policy which handles all the contingencies related to the placement of the Keva plank by human.
+
+          <br><br>
+
+        <!--   <h5>ABB YuMi buidling Tower in simulation </h5> -->
+          <h5>ABB YuMi buidling tower in real world </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/GIsBpqA7pt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <h5>ABB Yumi building Pi structure in simulation </h5>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/bj1rXBeAJ6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+          <br>
         </div>
       </div>
     </div>
