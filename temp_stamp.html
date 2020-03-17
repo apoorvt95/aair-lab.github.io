@@ -56,6 +56,7 @@
     <!-- Main content -->
     <div class="card-main mx-2" >
       <div class="card-body mx-0">
+        <div class = "col-lg-12" >
         <div class="publications"  id="publications">
           <h2>Anytime Task and Motion Policies for Stochastic Environments</h2><br>
           <h3>Naman Shah, Deepak Kala Vasudevan, Kislay Kumar, Pranav Kamojhalla,Siddharth Srivastava </h3><br>
@@ -71,7 +72,7 @@
           <br><br><br>
 
           <h3> Videos of experiments: </h3>
-          In all the experiments below, "solution" refers to a proper policy with low-level refinement of all the actions. 
+          In all the experiments below, "solution" refers to a tree-structured <b>proper policy</b> for the abstract SSP with motion plans for all of the robot's movements. 
           <br><br><br>
           <h4> Cluttered Table </h4>
           <i>Goal</i>: Pick up the black object.
@@ -81,9 +82,13 @@
               <li>There is no designated free area where obstructing objects can be stashed.</li>
             </ul>
 
-          Our system computes a solution that picks and repositions several objects (placing the objects in recycle box if they are crushed) before grasping the target object.
+          Our system computes a solution that picks and repositions several objects (placing the objects in the recycle box if they are crushed) before grasping the target object.
           <br/><br/>
-          <h6> <b>Case 1</b>: No delicate bottles need to be picked up to reach the target bottle </h6>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tPWYuOa7IFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+          <!-- <h6> <b>Case 1</b>: No delicate bottles need to be picked up to reach the target bottle </h6>
           In this case, our system computes the solution to pick bottles which obstructs the target bottle, place them somewhere on the table and pick the target bottle. <br><br>
           Simulation Video:<br><br>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLBy6pFAM6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -104,33 +109,77 @@
           <br><br>
           <i>Case 2.2</i>: Robot picks up a delicate bottle and observes that it is not crushed.<br><br>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/sLDXlfh8gnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><br>
+        -->
+          <br><br> 
 
         <h4> Building structures with Keva planks </h4> <br>
           <i>Goal</i>: Build the given Keva structure usin ABB YuMi.
           <br>
             <ul>
-              <li>Human can place a plank at one of the predefined locations. YuMi observes the environment and picks the plank from that location. </li>
+              <li>A Human can place a plank at one of the predefined locations. YuMi observes the environment and picks the plank from that location. </li>
             </ul>
 
-          Our system computes and refines the policy which handles all the contingencies related to the placement of the Keva plank by human.
+          Our system computes the solution which handles all the contingencies related to the placement of the Keva plank by the human.
 
           <br><br>
 
         <!--   <h5>ABB YuMi buidling Tower in simulation </h5> -->
-          <h6> <b>Sturcture 1</b>: Tower (hight: 12) </h6><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dIplH8PyLcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h6> <b>Sturcture 1</b>: Tower (hight: 12) </h6><br>
+            <!-- <div class = "container" > -->
+              <div class = "row" >
+                <div class = "col-md-3">
+                  <img src="Projects/STAMP/tower.png" height="315"/>
+                </div>
+                <div class = "col-md-auto">
+                  <span class = "pull-left">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dIplH8PyLcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </span>
+                </div>
+              <!-- </div> -->
+            </div>
           <br><br>
-          <h6><b>Structure 2</b>: Spiral Tower (height: 12)</h6><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RhLkwfnGLzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h6><b>Structure 2</b>: Twisted Tower (height: 12)</h6><br>
+
+          <div class = "row" >
+            <div class = "col-md-3">
+              <img src="Projects/STAMP/spiral_tower.png" height="315"/>
+            </div>
+            <div class = "col-md-auto">
+              <span class = "pull-left">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RhLkwfnGLzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            </div>
+          </div>
           <br><br>
           <h6><b>Structure 3</b>: 3Pi</h6><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/G2eEHR36EWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <div class = "row" >
+            <div class = "col-md-3">
+              <img src="Projects/STAMP/triple_pi.png" height="315"/>
+            </div>
+            <div class = "col-md-auto">
+              <span class = "pull-left">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G2eEHR36EWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            </div>
+          </div>
           <br><br>
           <h6><b>Structure 4</b>: Triple Tower (height: 8)</h6><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/jp9eM72_68Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+          <div class = "row" >
+            <div class = "col-md-3">
+              <img src="Projects/STAMP/keva_three_tower.png" height="315" width = "315"/>
+            </div>
+            <div class = "col-md-auto">
+              <span class = "pull-left">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jp9eM72_68Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+          </div>
+          </div>
           <br><br>
           <br>
+        </div>
         </div>
       </div>
     </div>
