@@ -81,15 +81,54 @@
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
                 <div class="card rcard mx-2">
                   <div class="card-body">
-                    <h4 class="card-title">Planning and Reasoning Under Uncertainty</h4>
+                    <h4 class="card-title">Synthesis and Analysis of Abstractions for Autonomy</h4>
                     <p class="card-text">
-                      <p class="text-justify">A real robot never has perfect sensors or actuators. Instead, an intelligent robot needs to be able to solve the tasks assigned to it while handling uncertainty about the environment as well as about the effects of its own actions. This is a challenging computational problem, but also one that humans solve on a routine basis (we don't have perfect sensors or actuators either!).</p>
+                      <p class="text-justify">It would be impractical to reason about multi-step tasks such as setting a table for dinner at the lowest level of modeling (e.g.,individual joint movements). In order to build autonomous systems that help in complex, multi-step tasks (where we may actually need help), we draw upon the best example of intelligent systems we know: humans. As humans we rarely think about where to place our knees and elbows. Instead, we reason about achieving abstracted regions of configurations (e.g. reach the 5fth floor).</p>
 
-                      <p class="text-justify">We are developing new methods for efficiently expressing and solving problems where the agent has limited, incomplete information about the quantities and identities of the objects that it may encounter.</p>
+                      <p class="text-justify">Automatically coming up with the right abstraction to solve a problem efficiently is a notoriously challenging problem. We are developing new methods for utilizing abstractions in sequential decision making (SDM), for evaluating the effect of abstractions on models for SDM, as well as to search for abstractions that would aid in solving a given SDM problem.</p>
                     </p>
                   </div>
-                  <img src="images/pomdp.png" class="card-img-bottom" alt="POMDP Example" width="200px">
-                  <figcaption class="figure-caption" style="text-align: center;">Open-universe tiger POMDP with an unknown number of moving tigers.</figcaption>
+                  <img src="images/abstractions.jpg" class="card-img-bottom" alt="Maze Abstraction into Rooms" width="200px">
+                  <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; margin-left:5px; margin-right: 5px;">Abstraction of a maze into rooms, and critical region labelling for one sample environment.</figcaption>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Integrated Task and Motion Planning</h4>
+                    <p class="card-text text-justify">In order to solve tasks such as doing the laundry, a robot needs to compute high-level strategy (should I use the basket?) as well as the joint movements that it should execute. Unfortunately, approaches for making high-level decisions rely on "task planning" abstractions that are lossy and can produce strategies that have no feasible motion plans.</p>
+
+                      <p class="text-justify">We are developing new methods for dynamically refining the task-planning abstraction to produce combined task and motion plans that are executable.
+                    </p>
+                  </div>
+                  <div class="mediarow">
+                    <div class="mediacolumn" >
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jp9eM72_68Y" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <figcaption class="figure-caption" style="text-align: center;">YuMi robot uses our approach for stochastic task and motion planning (STAMP) to build a triple tower of height 8 with Keva planks. </figcaption>
+                    </div>
+                    <div class="mediacolumn" >
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G2eEHR36EWI" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <figcaption class="figure-caption" style="text-align: center;">YuMi robot builds a 3&pi; structure with Keva planks using our STAMP algorithm. </figcaption>
+                    </div>
+                  </div>
+                  <div class="mediarow">
+                    <div class="mediacolumn" >
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhLkwfnGLzw" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; ">YuMi robot builds a twisted tower with Keva planks using our STAMP algorithm. </figcaption>
+                    </div>
+                    <div class="mediacolumn" >
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M3xrn9FskjA" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px;">PR2 robot sets the table for dinner using our integrated task and motion planning system.</figcaption>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
@@ -105,46 +144,12 @@
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N_co3vimPR4" frameborder="0" allowfullscreen></iframe>
                   </div>  
-                  <figcaption class="figure-caption" style="text-align: center;">PR2 does the laundry using a generalized planner with our integrated task and motion planning system.</figcaption>
+                  <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; margin-left:5px; margin-right: 5px;">PR2 does the laundry using a generalized planner with our integrated task and motion planning system.</figcaption>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
-                <div class="card rcard mx-2">
-                  <div class="card-body">
-                    <h4 class="card-title">Synthesis and Analysis of Abstractions for Autonomy</h4>
-                    <p class="card-text">
-            	        <p class="text-justify">It would be impractical to reason about multi-step tasks such as setting a table for dinner at the lowest level of modeling (e.g.,individual joint movements). In order to build autonomous systems that help in complex, multi-step tasks (where we may actually need help), we draw upon the best example of intelligent systems we know: humans. As humans we rarely think about where to place our knees and elbows. Instead, we reason about achieving abstracted regions of configurations (e.g. reach the 5fth floor).</p>
-
-                      <p class="text-justify">Automatically coming up with the right abstraction to solve a problem efficiently is a notoriously challenging problem. We are developing new methods for utilizing abstractions in sequential decision making (SDM), for evaluating the effect of abstractions on models for SDM, as well as to search for abstractions that would aid in solving a given SDM problem.</p>
-                    </p>
-                  </div>
-                  <img src="images/abstractions.jpg" class="card-img-bottom" alt="Maze Abstraction into Rooms" width="200px">
-                  <figcaption class="figure-caption" style="text-align: center;">Abstraction of a maze into rooms, and critical region labelling for one sample environment.</figcaption>
-                </div>
-             	</div>
 
          			<!--Second Row-->
-              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
-                <div class="card rcard mx-2">
-                  <div class="card-body">
-                    <h4 class="card-title">Integrated Task and Motion Planning</h4>
-                    <p class="card-text text-justify">In order to solve tasks such as doing the laundry, a robot needs to compute high-level strategy (should I use the basket?) as well as the joint movements that it should execute. Unfortunately, approaches for making high-level decisions rely on "task planning" abstractions that are lossy and can produce strategies that have no feasible motion plans.</p>
 
-                      <p class="text-justify">We are developing new methods for dynamically refining the task-planning abstraction to produce combined task and motion plans that are executable.
-                    </p>
-                  </div>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M3xrn9FskjA" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <figcaption class="figure-caption" style="text-align: center;">PR2 sets the table for dinner using our integrated task and motion planning system.</figcaption>
-                  <br>
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7DUw5L5bx7s" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <figcaption class="figure-caption" style="margin-left: 8px; text-align: center;">PR2 (in simulation) grasps an object in clutter using the same integrated task and motion planning system. </figcaption>
-                </div>
-              </div>
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
                 <div class="card rcard mx-2">
                   <div class="card-body">
@@ -155,8 +160,29 @@
                       <p class="text-justify">To address these issues, we are developing new ways for AI systems to explain their behavior in a manner aligned with the proficiency of the users. We are also developing methods for computing agent behavior that reduces the amount of information yielded to adversaries while maximizing its understandability by allies. These methods would facilitate spontaneous, productive teamwork between AI systems and people who may be experts in fields other than AI.</p>
                     </p>
                   </div>
-                  <img src="images/assistive_planning.JPG" class="card-img-bottom" alt="Assistive Planning" width="200px">
-                  <figcaption class="figure-caption" style="text-align: center;">Examples of explanation and behavior computation.</figcaption>
+                  <div class="mediarow" >
+                    <div class="mediacolumn" >
+                      <img src="images/assistive_planning.JPG" class="card-img-bottom" alt="Assistive Planning" style="margin-top: 45px;" >
+                    </div>
+                    <div class="mediacolumn" >
+                      <img src="images/assistive_planning_obfuscation.JPG" class="card-img-bottom" alt="Assistive Planning">
+                    </div>
+                  </div>
+                  <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; margin-left:5px; margin-right: 5px;">Examples of explanation and behavior computation.</figcaption>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px;">
+                <div class="card rcard mx-2">
+                  <div class="card-body">
+                    <h4 class="card-title">Planning and Reasoning Under Uncertainty</h4>
+                    <p class="card-text">
+                      <p class="text-justify">A real robot never has perfect sensors or actuators. Instead, an intelligent robot needs to be able to solve the tasks assigned to it while handling uncertainty about the environment as well as about the effects of its own actions. This is a challenging computational problem, but also one that humans solve on a routine basis (we don't have perfect sensors or actuators either!).</p>
+
+                      <p class="text-justify">We are developing new methods for efficiently expressing and solving problems where the agent has limited, incomplete information about the quantities and identities of the objects that it may encounter.</p>
+                    </p>
+                  </div>
+                  <img src="images/pomdp.png" class="card-img-bottom" alt="POMDP Example" width="200px">
+                  <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; margin-left:5px; margin-right: 5px;">Open-universe tiger POMDP with an unknown number of moving tigers.</figcaption>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-0 px-0" style="margin-bottom:25px; margin-left: 0px">
@@ -171,7 +197,7 @@
                         </p>
                       </div>
                       <img src="images/roblocks.png" class="card-img-bottom" alt="Roblocks System" width="200px">
-                      <figcaption class="figure-caption" style="text-align: center;">The Roblocks system in action.</figcaption>
+                      <figcaption class="figure-caption" style="text-align: center; margin-bottom: 10px; margin-left:5px; margin-right: 5px;">The Roblocks system in action.</figcaption>
                     </div>
                     </div>
 
@@ -420,7 +446,7 @@
           <div class="paper abstraction mobManipulation">
             <ul class="papers">
               <li> 
-                <em><a href = "Publications/skkks_icra20.pdf" target = "_Blank">Anytime Task and Motion Polices for Stochastic Environments</a></em>.<br>
+                <em><a href = "Publications/skkks_icra20.pdf" target = "_Blank">Anytime Task and Motion Policies for Stochastic Environments</a></em>.<br>
                 <a href="stamp.html">Project Page</a><br>
                 Naman Shah, Deepak Kala Vasudevan, Kislay Kumar, Pranav Kamojhalla,  Siddharth Srivastava.<br>
                 In Proceedings of ICRA 2020. (to appear) <br>
