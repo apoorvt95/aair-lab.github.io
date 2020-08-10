@@ -1,4 +1,6 @@
-
+---
+# Jekyll, my lord, please process this page :)
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,37 +21,10 @@
  </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#home">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#research">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#people">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#publications">Publications</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Teaching</a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">CSE 571: Fall 2019</a>
-              <a href="571_s19.html" class="dropdown-item">CSE 571: Spring 2019</a>
-              <a href="471_f18.html" class="dropdown-item">CSE 471: Fall 2018</a>
-              <a href="591_s18.html" class="dropdown-item">CSE 591: Spring 2018</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#contact">Contact Us</a>
-          </li>
-        </ul>            
-      </div>
-    </nav>
-    
+
+    <!-- Navigation Bar -->
+    {% include navigation.html %}
+
     <!--Background Cover Photo-->                
     <div class="img-responsive">
     </div>    
