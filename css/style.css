@@ -168,6 +168,15 @@ color:#4080FF;
     float: none;
     border: none;
 }
+
+.ta-td {
+
+    padding-left: 0px;
+    padding-right: 75px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .borderless td, .borderless th {
     border: none;
 }
